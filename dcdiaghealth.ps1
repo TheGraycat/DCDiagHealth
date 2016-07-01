@@ -25,7 +25,7 @@ Function sendEmail ([String] $body)
 	$MailMessage.IsBodyHtml = $True
 
 	$SMTPClient = New-Object System.Net.Mail.SMTPClient
-	$SMTPClient.Host = "192.168.0.1"
+	$SMTPClient.Host = "email.domain.com"
 	$SMTPClient.Send($MailMessage)
 }
 
